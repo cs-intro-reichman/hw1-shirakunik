@@ -8,22 +8,31 @@ public class TimeFormat {
 		int hour = Integer.parseInt (time.substring (0,2));
 		int minute = Integer.parseInt (time.substring (3,5));
 
-         if (hour == 00) {
-         System.out.println (hour + ":" + minute + " AM ");		
+        // the minutes: 
+        String mm;
+		if (minute < 10) { 
+			mm = "0" + minute;
+		} else {
+			mm = " " + minute;
 		}
-		if (hour == 24) {
-		System.out.println (00 + ":" + minute + " AM ");
+
+		 if (hour == 24) {
+            hour = 0;
+        }
+ 
+        // the houres: 
+
+		if (hour == 0) {
+         System.out.println (12 + ":" + mm + " AM ");		
 		}
-		else if (hour < 12) {
-			 System.out.println (hour + ":" + minute + " AM ");
+		 else if (hour < 12) {
+			 System.out.println (hour + ":" + mm + " AM ");
 		 }
 	     else if (hour == 12) {
-				System.out.println (hour + ":" + minute + " PM ");
+				System.out.println (hour + ":" + mm + " PM ");
 		 }	
-		 else if (hour > 12) {
-				System.out.println (hour - 12 + ":" + minute + " PM ");
+		  else if (hour > 12) {
+				System.out.println ((hour - 12) + ":" + mm + " PM ");
 	        }
 		}
 	}
-
-		
