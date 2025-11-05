@@ -23,16 +23,16 @@ public class TimeFormat {
         // the houres: 
 
 		if (hour == 0) {
-         System.out.println (12 + ":" + mm + " AM ");		
+         System.out.println (12 + ":" + mm + "AM");		
 		}
 		 else if (hour < 12) {
-			 System.out.println (hour + ":" + mm + " AM ");
+			 System.out.println (hour + ":" + mm + "AM");
 		 }
 	     else if (hour == 12) {
-				System.out.println (hour + ":" + mm + " PM ");
+				System.out.println (hour + ":" + mm + "PM");
 		 }	
 		  else if (hour > 12) {
-				System.out.println ((hour - 12) + ":" + mm + " PM ");
+				System.out.println ((hour - 12) + ":" + mm + "PM");
 	        }
 		}
 	}
