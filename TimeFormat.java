@@ -13,7 +13,7 @@ public class TimeFormat {
 		if (minute < 10) { 
 			mm = "0" + minute;
 		} else {
-			mm = " " + minute;
+			mm = "" + minute;
 		}
 
 		 if (hour == 24) {
