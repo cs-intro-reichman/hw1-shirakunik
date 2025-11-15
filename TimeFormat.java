@@ -36,3 +36,8 @@ public class TimeFormat {
 	        }
 		}
 	}
+
+// great! good idea to separate the logic between minutes and hours.
+// I would have given the string 'mm' a better name, maybe 'minutes'
+// checking if hour == 0 is a great edge case notice also not really needed, since hour < 12 also includes 0 :) 
+
