@@ -17,3 +17,5 @@ public class PrintTo5 {
 
     }
  }
+
+// we meant to use a loop but this of course also works, just a bit if a headache writing :)
