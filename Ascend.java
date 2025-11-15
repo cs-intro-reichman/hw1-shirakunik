@@ -19,3 +19,6 @@ public class Ascend {
 		
 	}
 }
+
+// Great, adding comments is very helpful :)
+
